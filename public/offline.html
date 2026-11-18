@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You are offline — Campus Plus</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: #0b1f3a;
+        color: #fff;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        text-align: center;
+      }
+      .brand { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; }
+      .brand span { color: #ff7900; }
+      p { margin: 12px 0 24px; color: rgba(255, 255, 255, 0.72); line-height: 1.6; }
+      button {
+        border: 0;
+        border-radius: 12px;
+        background: #ff7900;
+        color: #0b1f3a;
+        font: inherit;
+        font-weight: 700;
+        padding: 12px 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="brand">Campus <span>Plus</span></div>
+      <p>You&rsquo;re offline. Check your data or Wi-Fi and try again.</p>
+      <button onclick="location.reload()">Try again</button>
+    </div>
+  </body>
+</html>
